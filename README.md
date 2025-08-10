@@ -32,7 +32,7 @@ Built with **FastAPI** (backend) + **React** (frontend), with **free-tier hostin
 ### Backend (FastAPI)
 - Store feedback (**name, email, feedback text**)
 - Retrieve all feedback entries
-- Uses SQLite (or in-memory storage)
+- Uses SQLite 
 - Dockerised for easy deployment
 
 ### Frontend (React)
