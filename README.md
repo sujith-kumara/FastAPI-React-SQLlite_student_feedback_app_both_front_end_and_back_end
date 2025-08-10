@@ -57,3 +57,14 @@ Built with **FastAPI** (backend) + **React** (frontend), with **free-tier hostin
 ```bash
 git clone https://github.com/sujith-kumara/FastAPI-React-SQLlite_student_feedback_app_both_front_end_and_back_end.git
 cd FastAPI-React-SQLlite_student_feedback_app_both_front_end_and_back_end
+
+
+## 2️⃣ Backend Setup (FastAPI)
+
+### Local Setup
+```bash
+cd backend
+python -m venv venv
+source venv/bin/activate   # Windows → venv\Scripts\activate
+pip install -r requirements.txt
+uvicorn main:app --reload
