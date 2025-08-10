@@ -68,3 +68,41 @@ python -m venv venv
 source venv/bin/activate   # Windows → venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn main:app --reload
+
+
+Backend will run at → http://127.0.0.1:8000
+
+
+### Docker Setup
+'''bash
+cd backend
+docker build -t feedback-backend .
+docker run -p 8000:8000 feedback-backend
+
+### Frontend Setup (React)
+'''bash
+cd frontend
+npm install
+npm start
+Frontend will run at → http://localhost:3000
+
+
+📦 API Endpoints
+Method	Endpoint	Description
+POST	/feedback	Submit feedback
+GET	/feedback	Retrieve all entries
+
+FastAPI-React-SQLlite_student_feedback_app_both_front_end_and_back_end/
+│
+├── backend/           # FastAPI backend
+│   ├── main.py
+│   ├── requirements.txt
+│   └── Dockerfile
+│
+├── frontend/          # React frontend
+│   ├── src/
+│   ├── package.json
+│   └── public/
+│
+└── README.md
+
